@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "app-movil",
+    "slug": "app-movil",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Requerimos tu ubicación para registrar el área exacta de la inspección del hospital."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Necesitamos acceso a la cámara para capturar evidencia fotográfica de los insumos y áreas."
+        }
+      ]
+    ]
+  }
+}
